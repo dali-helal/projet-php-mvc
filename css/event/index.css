@@ -1,0 +1,32 @@
+ 
+     .event-container {
+        padding-inline: 6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .event-card {
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-card h4 {
+        margin-top: 0;
+    }
+
+    .event-card p {
+        margin: 5px 0;
+    }
+    .event-container-form{
+        padding-inline: 6rem;
+        width: 40%;
+    }
+    h2 {
+   
+        color: #333;
+    }
+
+ 

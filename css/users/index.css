@@ -1,0 +1,87 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.user-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.user-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+.action-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.action-container button,
+.action-container a {
+    margin-right: 5px; 
+    text-decoration: none;
+}
+
+.btn-delete,
+.btn-update {
+    padding: 8px 12px;
+    background-color: #ff6347; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.btn-update {
+    background-color: #4682b4;
+}
+
+.btn-delete:hover,
+.btn-update:hover {
+    background-color: #cc4c39;
+}
+
+.btn-update:hover {
+    background-color: #2d6187;
+}
+
+.user-table td:last-child {
+    text-align: center;
+}
+
+/*********/
+.user-details {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.user-info {
+    margin-bottom: 10px;
+}
+
+.user-info label {
+    font-weight: bold;
+}
+
+.user-data {
+    margin-left: 10px;
+}
