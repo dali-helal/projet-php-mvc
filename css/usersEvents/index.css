@@ -1,0 +1,19 @@
+.participate-form {
+    width: 80%;
+    padding-inline: 6rem;
+}
+
+.participate-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.participate-form select {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+

@@ -47,9 +47,21 @@ switch($controller) {
                 break;
             case 'store':
                 $eventController->store();
-                break;
+                break; 
         }
         break;
+    case 'ParticipateController':
+            $ParticipateController = new ParticipateController();
+        switch($action) {
+            case 'index':
+                $ParticipateController->index();
+                break;
+            case 'store':
+                $ParticipateController->store();
+                break;
+
+            }
+            break;
 
 }
 ?>

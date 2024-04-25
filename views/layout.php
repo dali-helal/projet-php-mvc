@@ -12,6 +12,7 @@
             <a href="create-new-event">Create Event</a>
             <a href="users_list">Users List</a>
             <a href="create_new_user">Create New User</a>
+            <a href="participate">participate to Event</a>
             </ul>
         </div>
     </header>
