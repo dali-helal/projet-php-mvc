@@ -29,10 +29,31 @@ class ParticipateController {
             $this->ParticipateModel->store($event_id, $user_id);
             header("Location: index.php?controller=EventController&action=index");
             exit();
-            
         }
      
     }
+    public function eventsByUser() {
+     
+        $userModel = new UserModel();
+        $users = $userModel->getAllUsers();
+        
+        include 'views/event_users/myEvents.php';
+    }   
+    public function participate() {
+        if (isset($_GET['user_id'])) {
+
+        $user_id = $_GET['user_id'];
+
+        $events= $this->ParticipateModel->getEventsByUser($user_id);
+
+        include 'views/event_users/participation_results.php';
+
+        }
+    }   
+    
+
+
+    
     
 }
 ?>

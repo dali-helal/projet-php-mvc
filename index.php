@@ -47,7 +47,16 @@ switch($controller) {
                 break;
             case 'store':
                 $eventController->store();
-                break; 
+                break;
+            case 'delete':
+                $eventController->delete();
+                break;
+            case 'edit':
+                $eventController->edit();
+            break;
+            case 'updateEvent':
+                $eventController->updateEvent();
+            break;
         }
         break;
     case 'ParticipateController':
@@ -59,9 +68,14 @@ switch($controller) {
             case 'store':
                 $ParticipateController->store();
                 break;
-
+            case 'eventsByUser':
+                $ParticipateController->eventsByUser();
+                break;
+            case 'participate':
+                $ParticipateController->participate();
+            break;
+            
             }
             break;
-
 }
 ?>

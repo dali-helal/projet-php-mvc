@@ -1,6 +1,10 @@
 RewriteEngine On
 RewriteRule ^create-new-event$ index.php?controller=EventController&action=create [L]
+
+
 RewriteRule ^participate$ index.php?controller=ParticipateController&action=index [L]
+RewriteRule ^my_events$ index.php?controller=ParticipateController&action=eventsByUser [L]
+
 
 RewriteRule ^event_list$ index.php [L]
 

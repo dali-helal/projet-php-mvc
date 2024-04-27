@@ -9,10 +9,11 @@
         <!-- Navbar -->
         <div class="navbar">
             <a href="event_list">Events List</a>
-            <a href="create-new-event">Create Event</a>
             <a href="users_list">Users List</a>
+            <a href="create-new-event">Create New Event</a>
             <a href="create_new_user">Create New User</a>
-            <a href="participate">participate to Event</a>
+            <a href="participate">Participate in Event</a>
+            <a href="my_events">My Participated Events</a>
             </ul>
         </div>
     </header>
@@ -21,8 +22,5 @@
         <?php include $content; ?>
     </div>
     
-    <footer>
-        <!-- Footer content -->
-    </footer>
 </body>
 </html>

@@ -7,7 +7,8 @@
 </head>
 <body>
     
-<h3>Liste des événements</h3>
+<?php $user_name = $events[0]['nom']; ?>
+<h3>Events Participated by <?php echo $user_name; ?></h3>
 <div class="event-container">
     <?php foreach ($events as $event): ?>
         <div class="event-card">
@@ -15,16 +16,7 @@
             <p>Date: <?= $event['date']; ?></p>
             <p>Lieu: <?= $event['location']; ?></p>
             <p>Description: <?= $event['description']; ?></p>
-            <p>Participants: <?= $event['participants_count']; ?></p> 
-            <div class="action">
-            <form method="post" action="index.php?controller=EventController&action=edit&&event_id=<?= $event['id']; ?>" >
-                <button type="submit" class="btn-update">Update Event </button>
-            </form>
-            <div>
-            <a href="index.php?controller=EventController&action=delete&&event_id=<?= $event['id']; ?>" class="btn-delete">Delete Event</a>
-            </div>
-             
-            </div>
+      
         </div>
     <?php endforeach; ?>
 </div>

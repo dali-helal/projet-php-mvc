@@ -28,22 +28,16 @@ class UserModel {
 
     public function updateUserDetails($nom, $prenom, $email, $user_id) {
         try {
-            // Prepare the SQL statement with a WHERE clause
             $stmt = $this->db->prepare("UPDATE users SET nom=:nom, prenom=:prenom, email=:email WHERE user_id=:user_id");
     
-            // Bind parameters
             $stmt->bindParam(':nom', $nom);
             $stmt->bindParam(':prenom', $prenom);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':user_id', $user_id);
-    
-            // Execute the SQL statement
+
             $stmt->execute();
-    
-            // Return true on success
             return true;
         } catch(PDOException $e) {
-            // Handle the exception (e.g., log it or return false)
             return false;
         }
     }
@@ -52,12 +46,10 @@ class UserModel {
 
         $stmt = $this->db->prepare("INSERT INTO users (nom, prenom, email) VALUES (:nom, :prenom, :email)");
         
-        // Bind parameters
         $stmt->bindParam(':nom', $nom);
         $stmt->bindParam(':prenom', $prenom);
         $stmt->bindParam(':email', $email);
     
-        
         try {
             $stmt->execute();
             return true; 
@@ -69,7 +61,6 @@ class UserModel {
     public function deleteUser($userId){
         $stmt = $this->db->prepare("DELETE FROM users WHERE user_id = :user_id");
         
-        // Bind parameters
         $stmt->bindParam(':user_id', $userId);
     
         try {

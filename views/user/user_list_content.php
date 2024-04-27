@@ -25,7 +25,7 @@
                         <td><?= $user['prenom']; ?></td>
                         <td><?= $user['email']; ?></td>
                     
-                    <td class="action-container">
+                    <td class="action">
                         <form method="post" action="index.php?controller=UserController&action=edit&&user_id=<?= $user['user_id']; ?>" >
                         <button type="submit" class="btn-update">Update</button>
                         </form>
