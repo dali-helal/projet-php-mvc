@@ -3,10 +3,20 @@
 <head>
     <title>Event Management System</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navbar -->
         <div class="navbar">
             <a href="event_list">Events List</a>
             <a href="users_list">Users List</a>
@@ -21,6 +31,8 @@
     <div class="content">
         <?php include $content; ?>
     </div>
-    
+    <footer>
+        &copy; 2024 Event Management System
+    </footer>
 </body>
 </html>
